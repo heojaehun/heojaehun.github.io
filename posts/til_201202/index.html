@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>[TIL] 201202 // 📔뒤뜰정원사의 작업 노트</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.78.2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Heo, Jaehun" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://heojaehun.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[TIL] 201202"/>
+<meta name="twitter:description" content="[TIL] 201202 [Excel] INDIRECT 함수 특정 셀을 수식으로 선택하고 싶을 때 사용하는 함수이다. 사용 방식은 =INDIRECT({셀 주소}, {주소 형식}이다. 여기서 셀 주소는 주소 형식에 따라 두 가지 방밥으로 쓸 수 있다. 예를 들어 A1 셀을 선택할 때는 아래와 같이 쓸 수 있다.
+   주소 형식 값 셀 주소 값     TRUE A1   FALSE R1C1    실제 예) 아래 수식은 B1 셀을 선택하는 함수이다."/>
+
+    <meta property="og:title" content="[TIL] 201202" />
+<meta property="og:description" content="[TIL] 201202 [Excel] INDIRECT 함수 특정 셀을 수식으로 선택하고 싶을 때 사용하는 함수이다. 사용 방식은 =INDIRECT({셀 주소}, {주소 형식}이다. 여기서 셀 주소는 주소 형식에 따라 두 가지 방밥으로 쓸 수 있다. 예를 들어 A1 셀을 선택할 때는 아래와 같이 쓸 수 있다.
+   주소 형식 값 셀 주소 값     TRUE A1   FALSE R1C1    실제 예) 아래 수식은 B1 셀을 선택하는 함수이다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://heojaehun.github.io/posts/til_201202/" />
+<meta property="article:published_time" content="2020-12-03T15:10:01+09:00" />
+<meta property="article:modified_time" content="2020-12-03T15:10:01+09:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://heojaehun.github.io"><img class="app-header-avatar" src="https://s.gravatar.com/avatar/dc6c07a4575bcccbd3cb004bb080f3aa?s=160" alt="Heo, Jaehun" /></a>
+      <h1>📔뒤뜰정원사의 작업 노트</h1>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             | 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+      </nav>
+      <p>개발합니다. // 모두의 연구소 임베디드랩</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/heojaehun" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://jakupsil.tistory.com" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-link">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">[TIL] 201202</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Dec 3, 2020
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          4 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h1 id="til-201202">[TIL] 201202</h1>
+<h2 id="excel-indirect-함수">[Excel] INDIRECT 함수</h2>
+<p>특정 셀을 수식으로 선택하고 싶을 때 사용하는 함수이다.
+사용 방식은 <code>=INDIRECT({셀 주소}, {주소 형식}</code>이다.
+여기서 셀 주소는 주소 형식에 따라 두 가지 방밥으로 쓸 수 있다.
+예를 들어 A1 셀을 선택할 때는 아래와 같이 쓸 수 있다.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">주소 형식 값</th>
+<th style="text-align:center">셀 주소 값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">TRUE</td>
+<td style="text-align:center">A1</td>
+</tr>
+<tr>
+<td style="text-align:center">FALSE</td>
+<td style="text-align:center">R1C1</td>
+</tr>
+</tbody>
+</table>
+<p>실제 예)
+아래 수식은 B1 셀을 선택하는 함수이다.
+<code>=INDIRECT(&quot;R1&quot;&amp;&quot;C&quot;&amp;1+1, FALSE)</code></p>
+<h2 id="rtos-개발-환경-구성">[RTOS] 개발 환경 구성</h2>
+<h3 id="컴파일러와-에뮬레이터-설치">컴파일러와 에뮬레이터 설치</h3>
+<p>WSL2 상에 설치된 Ubuntu에 아래와 같은 명령으로 컴파일러와 에뮬레이터를 설치하였다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt install gcc-arm-none-eabi
+$ sudo apt install qemu-system-arm
+</code></pre></div><p>설치 버전을 확인해보았다. 컴파일러는 <code>9.2.1</code>이 설치된 것을 확인하였고, 에뮬레이터는 <code>4.2.1</code>이 설치된 것을 확인하였다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ arm-none-eabi-gcc -v
+...<span style="color:#f92672">(</span>생략<span style="color:#f92672">)</span>...
+Thread model: single
+gcc version 9.2.1 <span style="color:#ae81ff">20191025</span> <span style="color:#f92672">(</span>release<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>ARM/arm-9-branch revision 277599<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>15:9-2019-q4-0ubuntu1<span style="color:#f92672">)</span>
+
+$ qemu-system-arm --version
+QEMU emulator version 4.2.1 <span style="color:#f92672">(</span>Debian 1:4.2-3ubuntu6.10<span style="color:#f92672">)</span>
+Copyright <span style="color:#f92672">(</span>c<span style="color:#f92672">)</span> 2003-2019 Fabrice Bellard and the QEMU Project developers
+</code></pre></div><p>qemu-system-arm이 지원하는 가상 머신을 아래 명령으로 확인하였다. 참고하고 있는 책에는 <code>-M</code> 명령 뒤에 <code>?</code>를 입력하라고 되어있지만 먹히지 않았고, 대신 <code>help</code>를 입력하니 됐다. (<a href="https://wiki.qemu.org/Documentation/Platforms/ARM">참고 링크</a>)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ qemu-system-arm -M help
+</code></pre></div><p>출력되는 가상머신 목록 중 앞으로 다룰 가상머신은 <strong>ARM RealView Platform Baseboard for Cortex-A8</strong>이다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">...<span style="color:#f92672">(</span>생략<span style="color:#f92672">)</span>...
+realview-eb-mpcore   ARM RealView Emulation Baseboard <span style="color:#f92672">(</span>ARM11MPCore<span style="color:#f92672">)</span>
+realview-pb-a8       ARM RealView Platform Baseboard <span style="color:#66d9ef">for</span> Cortex-A8			&lt;&lt; 이것
+realview-pbx-a9      ARM RealView Platform Baseboard Explore <span style="color:#66d9ef">for</span> Cortex-A9
+romulus-bmc          OpenPOWER Romulus BMC <span style="color:#f92672">(</span>ARM1176<span style="color:#f92672">)</span>
+...<span style="color:#f92672">(</span>생략<span style="color:#f92672">)</span>...
+</code></pre></div><h3 id="gdb-설치-및-실행">gdb 설치 및 실행</h3>
+<p>책 내용과 다르게 설치 패키지 이름이 바뀌었다. 이전에는 gdb를 설치할 때 특정 아키텍쳐를 선택해야했지만 지금은 아니다. <a href="https://kldp.org/node/162560">링크</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt install gdb-arm-none-eabi
+$ sudo apt install gdb-maltiarch
+</code></pre></div><p>qemu로 빌드한 파일을 실행해보니 아래와 같은 메시지가 출력되었다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">➜  rtos sudo qemu-system-arm -M realview-pb-a8 -kernel moduOS.axf -S -gdb localhost::1234
+Unable to init server: Could not connect: Connection refused
+ALSA lib confmisc.c:767:<span style="color:#f92672">(</span>parse_card<span style="color:#f92672">)</span> cannot find card <span style="color:#e6db74">&#39;0&#39;</span>
+ALSA lib conf.c:4732:<span style="color:#f92672">(</span>_snd_config_evaluate<span style="color:#f92672">)</span> <span style="color:#66d9ef">function</span> snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:<span style="color:#f92672">(</span>snd_func_concat<span style="color:#f92672">)</span> error evaluating strings
+ALSA lib conf.c:4732:<span style="color:#f92672">(</span>_snd_config_evaluate<span style="color:#f92672">)</span> <span style="color:#66d9ef">function</span> snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:<span style="color:#f92672">(</span>snd_func_refer<span style="color:#f92672">)</span> error evaluating name
+ALSA lib conf.c:4732:<span style="color:#f92672">(</span>_snd_config_evaluate<span style="color:#f92672">)</span> <span style="color:#66d9ef">function</span> snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:<span style="color:#f92672">(</span>snd_config_expand<span style="color:#f92672">)</span> Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:<span style="color:#f92672">(</span>snd_pcm_open_noupdate<span style="color:#f92672">)</span> Unknown PCM default
+alsa: Could not initialize DAC
+alsa: Failed to open <span style="color:#e6db74">`</span>default<span style="color:#e6db74">&#39;:
+</span><span style="color:#e6db74">alsa: Reason: No such file or directory
+</span><span style="color:#e6db74">ALSA lib confmisc.c:767:(parse_card) cannot find card &#39;</span>0<span style="color:#e6db74">&#39;
+</span><span style="color:#e6db74">ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+</span><span style="color:#e6db74">ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+</span><span style="color:#e6db74">ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+</span><span style="color:#e6db74">ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+</span><span style="color:#e6db74">ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+</span><span style="color:#e6db74">ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+</span><span style="color:#e6db74">ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+</span><span style="color:#e6db74">alsa: Could not initialize DAC
+</span><span style="color:#e6db74">alsa: Failed to open `default&#39;</span>:
+alsa: Reason: No such file or directory
+audio: Failed to create voice <span style="color:#e6db74">`</span>lm4549.out<span style="color:#960050;background-color:#1e0010">&#39;</span>
+gtk initialization failed
+</code></pre></div><p>검색해보니 첫 줄의 내용은 디스플레이와 관련된 것으로 확인 되었다. 그리고 아래 링크 보고 디스플레이 관련 문제는 해결하였다. 링크 1을 통해서 WSL2 상에 설치된 ubuntu와 디스플레이 서버를 연결해야 함을 알았다. 그리고 링크 2를 통해서 실제로 문제를 해결할 수 있었다.
+<a href="https://stackoverflow.com/questions/60284542/wsl-gedit-unable-to-init-server-could-not-connect-connection-refused">링크 1</a>
+<a href="https://thenoface.tistory.com/5">링크 2</a></p>
+<p>남은 것은 오디오 관련 문제이다. ALSA는 리눅스 시스템에서 오디오와 관련된 것으로 안다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">➜  rtos qemu-system-arm -M realview-pb-a8 -kernel moduOS.axf -S -gdb localhost::1234
+ALSA lib confmisc.c:767:<span style="color:#f92672">(</span>parse_card<span style="color:#f92672">)</span> cannot find card <span style="color:#e6db74">&#39;0&#39;</span>
+ALSA lib conf.c:4732:<span style="color:#f92672">(</span>_snd_config_evaluate<span style="color:#f92672">)</span> <span style="color:#66d9ef">function</span> snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:<span style="color:#f92672">(</span>snd_func_concat<span style="color:#f92672">)</span> error evaluating strings
+ALSA lib conf.c:4732:<span style="color:#f92672">(</span>_snd_config_evaluate<span style="color:#f92672">)</span> <span style="color:#66d9ef">function</span> snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:<span style="color:#f92672">(</span>snd_func_refer<span style="color:#f92672">)</span> error evaluating name
+ALSA lib conf.c:4732:<span style="color:#f92672">(</span>_snd_config_evaluate<span style="color:#f92672">)</span> <span style="color:#66d9ef">function</span> snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:<span style="color:#f92672">(</span>snd_config_expand<span style="color:#f92672">)</span> Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:<span style="color:#f92672">(</span>snd_pcm_open_noupdate<span style="color:#f92672">)</span> Unknown PCM default
+alsa: Could not initialize DAC
+alsa: Failed to open <span style="color:#e6db74">`</span>default<span style="color:#e6db74">&#39;:
+</span><span style="color:#e6db74">alsa: Reason: No such file or directory
+</span><span style="color:#e6db74">ALSA lib confmisc.c:767:(parse_card) cannot find card &#39;</span>0<span style="color:#e6db74">&#39;
+</span><span style="color:#e6db74">ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+</span><span style="color:#e6db74">ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+</span><span style="color:#e6db74">ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+</span><span style="color:#e6db74">ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+</span><span style="color:#e6db74">ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+</span><span style="color:#e6db74">ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+</span><span style="color:#e6db74">ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+</span><span style="color:#e6db74">alsa: Could not initialize DAC
+</span><span style="color:#e6db74">alsa: Failed to open `default&#39;</span>:
+alsa: Reason: No such file or directory
+audio: Failed to create voice <span style="color:#e6db74">`</span>lm4549.out<span style="color:#e6db74">&#39;
+</span><span style="color:#e6db74">qemu-system-arm: -gdb localhost::1234: &#39;</span>localhost::1234<span style="color:#960050;background-color:#1e0010">&#39;</span> is not a valid char driver
+</code></pre></div><p>qemu를 사용할 때 오디오는 사용하지 않도록 설정했다. <a href="https://bugs.launchpad.net/qemu/+bug/1816052">참고 링크</a>
+아래에 적힌 스크립트를 qemu 실행 전에 입력하거나 터미널이 열릴 때 자동 실행되도록 .bashrc와 같은 파일 마지막에 추가하도록 한다. 나의 경우 zsh를 사용하므로 .zshrc 파일 마지막에 추가하였다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export QEMU_AUDIO_DRV<span style="color:#f92672">=</span>none
+</code></pre></div><p>이제 문제없이 qemu가 동작했다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">➜  rtos qemu-system-arm -M realview-pb-a8 -kernel moduOS.axf -S -gdb tcp::1234,ipv4
+</code></pre></div><p>별도 커맨드 창을 열고 gdb-multiarch를 실행시킨다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ gdb-multiarch
+</code></pre></div><p>gdb 프롬프트가 열리면 타겟을 연결 시킨다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> target remote:1234
+</code></pre></div><p>메모리 출력 명령으로 0x00000000 위치의 값을 확인해본다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> x/4x <span style="color:#ae81ff">0</span>
+0x0:    0xe1a00001      0x00000000      0x00000000      0x00000000
+</code></pre></div><p>책에 나와있는 것과 표현방식이 조금 다르지만 값은 같았다.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
