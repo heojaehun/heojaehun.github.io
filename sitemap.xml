@@ -8,7 +8,27 @@
   </url>
   
   <url>
+    <loc>https://heojaehun.github.io/tags/gdb/</loc>
+    <lastmod>2020-12-03T15:10:01+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://heojaehun.github.io/posts/</loc>
+    <lastmod>2020-12-03T15:10:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://heojaehun.github.io/tags/qemu/</loc>
+    <lastmod>2020-12-03T15:10:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://heojaehun.github.io/tags/rtos/</loc>
+    <lastmod>2020-12-03T15:10:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://heojaehun.github.io/tags/</loc>
     <lastmod>2020-12-03T15:10:01+09:00</lastmod>
   </url>
   
@@ -19,10 +39,6 @@
   
   <url>
     <loc>https://heojaehun.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://heojaehun.github.io/tags/</loc>
   </url>
   
 </urlset>
