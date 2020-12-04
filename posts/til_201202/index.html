@@ -195,7 +195,8 @@ audio: Failed to create voice <span style="color:#e6db74">`</span>lm4549.out<spa
 </code></pre></div><p>qemu를 사용할 때 오디오는 사용하지 않도록 설정했다. <a href="https://bugs.launchpad.net/qemu/+bug/1816052">참고 링크</a>
 아래에 적힌 스크립트를 qemu 실행 전에 입력하거나 터미널이 열릴 때 자동 실행되도록 .bashrc와 같은 파일 마지막에 추가하도록 한다. 나의 경우 zsh를 사용하므로 .zshrc 파일 마지막에 추가하였다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export QEMU_AUDIO_DRV<span style="color:#f92672">=</span>none
-</code></pre></div><p>이제 문제없이 qemu가 동작했다.</p>
+</code></pre></div><p><img src="/attatchments/test_img.png" alt="image"></p>
+<p>이제 문제없이 qemu가 동작했다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">➜  rtos qemu-system-arm -M realview-pb-a8 -kernel moduOS.axf -S -gdb tcp::1234,ipv4
 </code></pre></div><p>별도 커맨드 창을 열고 gdb-multiarch를 실행시킨다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ gdb-multiarch
