@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>[TIL] 201204 // 📔뒤뜰정원사의 작업 노트</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.78.2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Heo, Jaehun" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://heojaehun.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[TIL] 201204"/>
+<meta name="twitter:description" content="ARM 아키텍쳐 기초 익셉션 벡터 테이블    오프셋 이름     0x00 Reset   0x04 Undefined Instruction   0x08 SVC(Supervisor Call)   0x0C Prefetch Abort   0x10 Data Abort   0x14 Not Used   0x18 IRQ interrupt   0x1C FIQ interrupt    Reset (offset: 0x00)  칩에 전원이 처음 들어갔을 때 발생하는 익셉션  Undifined Instruction (offset: 0x04)  알 수 없는 명령이 읽혀졌을 때 발생하는 익셉션  SVC, Suvervisor Call (offset: 0x08)  운영체제에서 시스템 콜을 호출했을 때 발생하는 익셉션  Prefetch Abort (offset: 0x0C)  명령을 읽는 과정에서 오류가 생겼을 때 발생하는 익셉션  Data Abort (offset: 0x10)  데이터를 읽는 과정에서 오류가 생겼을 때 발생하는 익셉션  IRQ Interrupt (offset: 0x18)  인터럽트에 의해서 발생하는 익셉션 인터럽트와 익셉션의 동작은 차이나지 않음 통상적으로 인터럽트는 외부 신호에 의해서 발생하고 익셉션은 내부 신호에 의해서 발생하는 것으로 구분한다."/>
+
+    <meta property="og:title" content="[TIL] 201204" />
+<meta property="og:description" content="ARM 아키텍쳐 기초 익셉션 벡터 테이블    오프셋 이름     0x00 Reset   0x04 Undefined Instruction   0x08 SVC(Supervisor Call)   0x0C Prefetch Abort   0x10 Data Abort   0x14 Not Used   0x18 IRQ interrupt   0x1C FIQ interrupt    Reset (offset: 0x00)  칩에 전원이 처음 들어갔을 때 발생하는 익셉션  Undifined Instruction (offset: 0x04)  알 수 없는 명령이 읽혀졌을 때 발생하는 익셉션  SVC, Suvervisor Call (offset: 0x08)  운영체제에서 시스템 콜을 호출했을 때 발생하는 익셉션  Prefetch Abort (offset: 0x0C)  명령을 읽는 과정에서 오류가 생겼을 때 발생하는 익셉션  Data Abort (offset: 0x10)  데이터를 읽는 과정에서 오류가 생겼을 때 발생하는 익셉션  IRQ Interrupt (offset: 0x18)  인터럽트에 의해서 발생하는 익셉션 인터럽트와 익셉션의 동작은 차이나지 않음 통상적으로 인터럽트는 외부 신호에 의해서 발생하고 익셉션은 내부 신호에 의해서 발생하는 것으로 구분한다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://heojaehun.github.io/posts/til_201204/" />
+<meta property="article:published_time" content="2020-12-06T00:35:50+09:00" />
+<meta property="article:modified_time" content="2020-12-06T00:35:50+09:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://heojaehun.github.io"><img class="app-header-avatar" src="https://s.gravatar.com/avatar/dc6c07a4575bcccbd3cb004bb080f3aa?s=160" alt="Heo, Jaehun" /></a>
+      <h1>📔뒤뜰정원사의 작업 노트</h1>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             | 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+      </nav>
+      <p>개발합니다. // 모두의 연구소 임베디드랩</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/heojaehun" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://jakupsil.tistory.com" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-link">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">[TIL] 201204</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Dec 6, 2020
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+              <a class="tag" href="https://heojaehun.github.io/tags/rtos/">RTOS</a>
+              <a class="tag" href="https://heojaehun.github.io/tags/arm/">ARM</a>
+              <a class="tag" href="https://heojaehun.github.io/tags/exception/">Exception</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h2 id="arm-아키텍쳐-기초">ARM 아키텍쳐 기초</h2>
+<h3 id="익셉션-벡터-테이블">익셉션 벡터 테이블</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">오프셋</th>
+<th style="text-align:center">이름</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0x00</td>
+<td style="text-align:center">Reset</td>
+</tr>
+<tr>
+<td style="text-align:center">0x04</td>
+<td style="text-align:center">Undefined Instruction</td>
+</tr>
+<tr>
+<td style="text-align:center">0x08</td>
+<td style="text-align:center">SVC(Supervisor Call)</td>
+</tr>
+<tr>
+<td style="text-align:center">0x0C</td>
+<td style="text-align:center">Prefetch Abort</td>
+</tr>
+<tr>
+<td style="text-align:center">0x10</td>
+<td style="text-align:center">Data Abort</td>
+</tr>
+<tr>
+<td style="text-align:center">0x14</td>
+<td style="text-align:center">Not Used</td>
+</tr>
+<tr>
+<td style="text-align:center">0x18</td>
+<td style="text-align:center">IRQ interrupt</td>
+</tr>
+<tr>
+<td style="text-align:center">0x1C</td>
+<td style="text-align:center">FIQ interrupt</td>
+</tr>
+</tbody>
+</table>
+<h4 id="reset-offset-0x00">Reset (offset: 0x00)</h4>
+<ul>
+<li>칩에 전원이 처음 들어갔을 때 발생하는 익셉션</li>
+</ul>
+<h4 id="undifined-instruction-offset-0x04">Undifined Instruction (offset: 0x04)</h4>
+<ul>
+<li>알 수 없는 명령이 읽혀졌을 때 발생하는 익셉션</li>
+</ul>
+<h4 id="svc-suvervisor-call-offset-0x08">SVC, Suvervisor Call (offset: 0x08)</h4>
+<ul>
+<li>운영체제에서 시스템 콜을 호출했을 때 발생하는 익셉션</li>
+</ul>
+<h4 id="prefetch-abort-offset-0x0c">Prefetch Abort (offset: 0x0C)</h4>
+<ul>
+<li>명령을 읽는 과정에서 오류가 생겼을 때 발생하는 익셉션</li>
+</ul>
+<h4 id="data-abort-offset-0x10">Data Abort (offset: 0x10)</h4>
+<ul>
+<li>데이터를 읽는 과정에서 오류가 생겼을 때 발생하는 익셉션</li>
+</ul>
+<h4 id="irq-interrupt-offset-0x18">IRQ Interrupt (offset: 0x18)</h4>
+<ul>
+<li>인터럽트에 의해서 발생하는 익셉션</li>
+<li>인터럽트와 익셉션의 동작은 차이나지 않음</li>
+<li>통상적으로 인터럽트는 외부 신호에 의해서 발생하고 익셉션은 내부 신호에 의해서 발생하는 것으로 구분한다.</li>
+</ul>
+<h4 id="fiq-interrupt-offset-0x1c">FIQ Interrupt (offset: 0x1C)</h4>
+<ul>
+<li>인터럽트에 의해서 발생하는 익셉션</li>
+<li>IRQ보다 우선순위가 높고 처리도 빠르다.</li>
+<li>처리 속도가 빠른 이유는 FIQ 인터럽트가 발생하면 동작 모드가 FIQ 모드로 변하게 되는데, 이 때 CPU 레지스터 R8~R12가 FIQ 전용으로 사용되기 때문이다.
+<ul>
+<li>조금 더 구체적인 원리를 알 수 있었으면 한다.</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
