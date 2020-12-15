@@ -5,7 +5,17 @@
     <link>https://heojaehun.github.io/posts/</link>
     <description>Recent content in Posts on 📔뒤뜰정원사의 작업 노트</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Dec 2020 00:26:36 +0900</lastBuildDate><atom:link href="https://heojaehun.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Dec 2020 23:58:16 +0900</lastBuildDate><atom:link href="https://heojaehun.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TIL] 201215</title>
+      <link>https://heojaehun.github.io/posts/til_201215/</link>
+      <pubDate>Tue, 15 Dec 2020 23:58:16 +0900</pubDate>
+      
+      <guid>https://heojaehun.github.io/posts/til_201215/</guid>
+      <description>[책] 개발자의 글쓰기 (p.164 ~ p.183) 개념을 범주, 용도, 특징으로 설명하기 범주, 용도, 특징 순으로 작성한다.
+ 범주  사람들에게 무언가를 설명할 때 범주를 먼저 내새우면 이해하기 쉬워진다. 그 사람이 이미 알고있는 것으로부터 이해하기 시작할 수 있다.   용도  용도는 범주의 핵심 기능 독자에게 서비스의 정체성을 명확히 심어줘야 한다.   특징  장점과 강점 장점은 자기 기준, 강점은 경쟁 대상 기준의 비교 결과이다.    그림과 글로 묘사하기  그림을 함께 쓸 때는 글과 그림이 같은 용어를 사용하는지 꼭 확인한다.</description>
+    </item>
+    
     <item>
       <title>[TIL] 201214</title>
       <link>https://heojaehun.github.io/posts/til_201214/</link>
