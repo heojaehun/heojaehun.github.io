@@ -5,7 +5,16 @@
     <link>https://heojaehun.github.io/tags/%EA%B8%80%EC%93%B0%EA%B8%B0/</link>
     <description>Recent content in 글쓰기 on 📔뒤뜰정원사의 작업 노트</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 17 Dec 2020 00:14:08 +0900</lastBuildDate><atom:link href="https://heojaehun.github.io/tags/%EA%B8%80%EC%93%B0%EA%B8%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Dec 2020 00:49:21 +0900</lastBuildDate><atom:link href="https://heojaehun.github.io/tags/%EA%B8%80%EC%93%B0%EA%B8%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TIL] 201217</title>
+      <link>https://heojaehun.github.io/posts/til_201217/</link>
+      <pubDate>Fri, 18 Dec 2020 00:49:21 +0900</pubDate>
+      
+      <guid>https://heojaehun.github.io/posts/til_201217/</guid>
+      <description>[책] 개발자의 글쓰기 (p.193 ~ p.219) 그림과 함께 설명할 때  그림에 번호를 매기며 번호 하나마다 한줄 씩 설명을 다는 방식은 읽기 불편하다. 글과 그림을 왔다갔다하며 봐야하기 때문이다. 그럴때는 글을 최대한 줄이고 글 속에 번호를 포함시키는 것이 좋다.  예시: 푸시 서비스를 설정하려면 (1)설정 &amp;gt; (2)푸시 화면에서 (3)푸시 사용을 켜고, (4)인증서를 업로드한 뒤 (5)비밀번호를 설정하여 (6)저장합니다.    서사  서사가 너무 자세하거나 너무 없어도 글을 읽고 이해하기 어렵다. 독자 수준에 맞추어 글의 자세한 정도를 결정해야한다.</description>
+    </item>
+    
     <item>
       <title>[TIL] 201216</title>
       <link>https://heojaehun.github.io/posts/til_201216/</link>
