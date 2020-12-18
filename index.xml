@@ -5,7 +5,16 @@
     <link>https://heojaehun.github.io/</link>
     <description>Recent content on 📔뒤뜰정원사의 작업 노트</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 18 Dec 2020 00:49:21 +0900</lastBuildDate><atom:link href="https://heojaehun.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Dec 2020 23:53:41 +0900</lastBuildDate><atom:link href="https://heojaehun.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TIL] 201218</title>
+      <link>https://heojaehun.github.io/posts/til_201218/</link>
+      <pubDate>Fri, 18 Dec 2020 23:53:41 +0900</pubDate>
+      
+      <guid>https://heojaehun.github.io/posts/til_201218/</guid>
+      <description>[책] 개발자의 글쓰기 (p.220 ~ p.253) 고객의 요구사항은 변할 수밖에 없다.  고객은 자기가 원하는 제품이 정확히 뭔지 모른다. 개발자는 고객에게서 요구사항을 받아 분석하는 게 아니다. 개발자가 요구사항을 제시해서 고객이 선택하게 해야 한다. 고객의 요구사항은 끊임없이 변할 수밖에 없고 개발자는 이에 대응할 수 있어야 한다. 요구사항을 구현하고 나면 가능한 한 곧바로 고객에게 검수받아야 한다. 그래야 고객의 변덕을 줄일 수 있다. 분석-설계-구현-테스트-검수 구현 직전 고객의 요구사항을 점검하고 개발이 끝나면 곧바로 검수받는다.  고객의 만족도 높이기  고객의 요구사항에도 급이 있다.</description>
+    </item>
+    
     <item>
       <title>[TIL] 201217</title>
       <link>https://heojaehun.github.io/posts/til_201217/</link>
