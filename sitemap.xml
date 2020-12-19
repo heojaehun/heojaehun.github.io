@@ -3,32 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://heojaehun.github.io/posts/til_201219/</loc>
+    <lastmod>2020-12-20T01:01:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://heojaehun.github.io/posts/</loc>
+    <lastmod>2020-12-20T01:01:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://heojaehun.github.io/tags/</loc>
+    <lastmod>2020-12-20T01:01:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://heojaehun.github.io/tags/%EA%B8%80%EC%93%B0%EA%B8%B0/</loc>
+    <lastmod>2020-12-20T01:01:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://heojaehun.github.io/</loc>
+    <lastmod>2020-12-20T01:01:37+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://heojaehun.github.io/posts/til_201218/</loc>
     <lastmod>2020-12-18T23:53:41+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://heojaehun.github.io/posts/</loc>
-    <lastmod>2020-12-18T23:53:41+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://heojaehun.github.io/tags/python/</loc>
-    <lastmod>2020-12-18T23:53:41+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://heojaehun.github.io/tags/</loc>
-    <lastmod>2020-12-18T23:53:41+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://heojaehun.github.io/tags/%EA%B8%80%EC%93%B0%EA%B8%B0/</loc>
-    <lastmod>2020-12-18T23:53:41+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://heojaehun.github.io/</loc>
     <lastmod>2020-12-18T23:53:41+09:00</lastmod>
   </url>
   

@@ -5,7 +5,16 @@
     <link>https://heojaehun.github.io/</link>
     <description>Recent content on 📔뒤뜰정원사의 작업 노트</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 18 Dec 2020 23:53:41 +0900</lastBuildDate><atom:link href="https://heojaehun.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 01:01:37 +0900</lastBuildDate><atom:link href="https://heojaehun.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TIL] 201219</title>
+      <link>https://heojaehun.github.io/posts/til_201219/</link>
+      <pubDate>Sun, 20 Dec 2020 01:01:37 +0900</pubDate>
+      
+      <guid>https://heojaehun.github.io/posts/til_201219/</guid>
+      <description>[책] 개발자의 글쓰기 (p.254 ~ 끝) 기술 블로그의 4종류  저: 직접 경험하고 실험한 과정이나 결과 술: 어떤 것을 분석하여 의미를 풀이하고 해석한 것 편: 산만하고 복잡한 자료를 풀이하고 해석한 것 집: 여러 사람의 견해나 흩어진 자료를 한데 모아 정리한 것  순서를 요약하여 쓰기  편: 시간 순서로 일어난 일이나 해야 할 일을 쓴 것 프로그램 설치, 설정 순서, 개발 방법, 튜토리얼, 컨퍼런스 후기 등 처음부터 끝까지 나열하기만 하는 것이 아니라 적절히 단계를 나눠서 설명해야 한다.</description>
+    </item>
+    
     <item>
       <title>[TIL] 201218</title>
       <link>https://heojaehun.github.io/posts/til_201218/</link>
