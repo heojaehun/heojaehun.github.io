@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>글쓰기 on 작업실📦상자</title>
+    <link>https://heojaehun.github.com/tags/%EA%B8%80%EC%93%B0%EA%B8%B0/</link>
+    <description>Recent content in 글쓰기 on 작업실📦상자</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Jaehun Heo (CC BY 4.0)</copyright>
+    <lastBuildDate>Sun, 20 Dec 2020 01:01:37 +0900</lastBuildDate><atom:link href="https://heojaehun.github.com/tags/%EA%B8%80%EC%93%B0%EA%B8%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TIL] 201219</title>
+      <link>https://heojaehun.github.com/blog/til_201219/</link>
+      <pubDate>Sun, 20 Dec 2020 01:01:37 +0900</pubDate>
+      
+      <guid>https://heojaehun.github.com/blog/til_201219/</guid>
+      <description>[책] 개발자의 글쓰기 (p.254 ~ 끝) 기술 블로그의 4종류 저: 직접 경험하고 실험한 과정이나 결과 술: 어떤 것을 분석하여 의미를 풀이하고 해석한 것 편: 산만하고 복잡한 자료를 풀이하고 해석한 것 집: 여러 사람의 견해나 흩어진 자료를 한데 모아 정리한 것 순서를 요약하여 쓰기 편: 시간 순서로 일어난 일이나 해야 할 일을 쓴 것 프로그램 설치, 설정 순서, 개발 방법, 튜토리얼, 컨퍼런스 후기 등 처음부터 끝까지 나열하기만 하는 것이 아니라 적절히 단계를 나눠서 설명해야 한다.</description>
+      <content:encoded><![CDATA[<h2 id="책-개발자의-글쓰기-p254--끝">[책] 개발자의 글쓰기 (p.254 ~ 끝)</h2>
+<h3 id="기술-블로그의-4종류">기술 블로그의 4종류</h3>
+<ul>
+<li>저: 직접 경험하고 실험한 과정이나 결과</li>
+<li>술: 어떤 것을 분석하여 의미를 풀이하고 해석한 것</li>
+<li>편: 산만하고 복잡한 자료를 풀이하고 해석한 것</li>
+<li>집: 여러 사람의 견해나 흩어진 자료를 한데 모아 정리한 것</li>
+</ul>
+<h4 id="순서를-요약하여-쓰기">순서를 요약하여 쓰기</h4>
+<ul>
+<li>편: 시간 순서로 일어난 일이나 해야 할 일을 쓴 것</li>
+<li>프로그램 설치, 설정 순서, 개발 방법, 튜토리얼, 컨퍼런스 후기 등</li>
+<li>처음부터 끝까지 나열하기만 하는 것이 아니라 적절히 단계를 나눠서 설명해야 한다.
+<ul>
+<li>나눠진 단계가 목차가 된다.</li>
+</ul>
+</li>
+</ul>
+<h4 id="자료를-모아-핵심을-엮어서-쓰기">자료를 모아 핵심을 엮어서 쓰기</h4>
+<ul>
+<li>명령어 모음, 팁, 00 가지 규칙 같은 글</li>
+<li>&lsquo;집&rsquo;이라고 해서 꼭 여러 사람의 견해나 자료를 모아야만 하는 것은 아니다.
+<ul>
+<li>자신의 견해를 몇 가지 나열해 정리하는 것도 방법이다.</li>
+</ul>
+</li>
+<li>기술 블로그를 처음 쓰는 개발자라면 가장 쉽게 도전할 수 있는 형식의 글이다.
+<ul>
+<li>게다가 조회 수도 높다고 한다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="기업의-기술-블로그-운영-팁">기업의 기술 블로그 운영 팁</h3>
+<ul>
+<li>기술 블로그를 운영하려는 기업이 늘어나고 있다.
+<ul>
+<li>적합한 개발자 채용에 도움을 준다.</li>
+<li>개발 과정에 생긴 노하우를 체계적으로 축적할 수 있다.</li>
+<li>개발자 스스로 공부하게 만든다.</li>
+</ul>
+</li>
+<li>협업해서 글쓰기, 짝 글쓰기
+<ul>
+<li>두 명이 하나의 글을 함께 쓴다.</li>
+<li>독자의 관점에서 글을 쓸 수 있어 완성도가 높아진다.</li>
+<li>더 보편적인 지식 체계를 만들 수 있다. 따라서 다른 개발자에게 쉽게 전파할 수 있다.</li>
+<li>자연스럽게 팀 회고를 할 수 있다.</li>
+<li>같이 쓰면 글쓰기에 대한 부담이 가벼워진다.</li>
+</ul>
+</li>
+<li>짝 글쓰기를 하는 방법: 짝 프로그래밍(Pair programming)에서 쓰는 방법을 사용한다.
+<ul>
+<li>Driver &amp; Navigator: 작성자와 검토자</li>
+<li>Coder &amp; Adviser: 작성자와 조언자</li>
+<li>Verbalizer &amp; Listener: 소리 내 읽는 사람과 귀로 듣는 사람</li>
+<li>Ping-Pong: 두 명이 번갈아 가며 글쓰기</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>[TIL] 201218</title>
+      <link>https://heojaehun.github.com/blog/til_201218/</link>
+      <pubDate>Fri, 18 Dec 2020 23:53:41 +0900</pubDate>
+      
+      <guid>https://heojaehun.github.com/blog/til_201218/</guid>
+      <description>[책] 개발자의 글쓰기 (p.220 ~ p.253) 고객의 요구사항은 변할 수밖에 없다. 고객은 자기가 원하는 제품이 정확히 뭔지 모른다. 개발자는 고객에게서 요구사항을 받아 분석하는 게 아니다. 개발자가 요구사항을 제시해서 고객이 선택하게 해야 한다. 고객의 요구사항은 끊임없이 변할 수밖에 없고 개발자는 이에 대응할 수 있어야 한다. 요구사항을 구현하고 나면 가능한 한 곧바로 고객에게 검수받아야 한다. 그래야 고객의 변덕을 줄일 수 있다. 분석-설계-구현-테스트-검수 구현 직전 고객의 요구사항을 점검하고 개발이 끝나면 곧바로 검수받는다. 고객의 만족도 높이기 고객의 요구사항에도 급이 있다.</description>
+      <content:encoded><![CDATA[<h2 id="책-개발자의-글쓰기-p220--p253">[책] 개발자의 글쓰기 (p.220 ~ p.253)</h2>
+<h3 id="고객의-요구사항은-변할-수밖에-없다">고객의 요구사항은 변할 수밖에 없다.</h3>
+<ul>
+<li>고객은 자기가 원하는 제품이 정확히 뭔지 모른다.</li>
+<li>개발자는 고객에게서 요구사항을 받아 분석하는 게 아니다.</li>
+<li>개발자가 요구사항을 제시해서 고객이 선택하게 해야 한다.</li>
+<li>고객의 요구사항은 끊임없이 변할 수밖에 없고 개발자는 이에 대응할 수 있어야 한다.</li>
+<li>요구사항을 구현하고 나면 가능한 한 곧바로 고객에게 검수받아야 한다.</li>
+<li>그래야 고객의 변덕을 줄일 수 있다.</li>
+<li>분석-설계-구현-테스트-검수</li>
+<li>구현 직전 고객의 요구사항을 점검하고 개발이 끝나면 곧바로 검수받는다.</li>
+</ul>
+<h3 id="고객의-만족도-높이기">고객의 만족도 높이기</h3>
+<ul>
+<li>고객의 요구사항에도 급이 있다.</li>
+<li>가장 급이 높은 요구사항부터 개발하는 것이 고객 만족도를 높이는 데 좋다.</li>
+</ul>
+<h4 id="카노-모델">카노 모델</h4>
+<ul>
+<li>기본 기능은 모든 요구를 충족시켜도 추가되는 만족도가 없다.</li>
+<li>기능의 성능은 요구를 충족시키는 만큼 만족도가 오른다.</li>
+<li>기대하지 않았던 특별한 기능은 충족하지 못해도 불만족스럽지 않으며, 만약 충족하면 크게 만족한다.</li>
+</ul>
+<h3 id="기술-블로그-쉽게-쓰는-방법">기술 블로그 쉽게 쓰는 방법</h3>
+<ul>
+<li>학교에서 썼던 글과 기술 블로그에 쓰는 글은 다르다.
+<ul>
+<li>기술 블로그에 쓰는 글은 설명문이나 논설문이 아니다.</li>
+</ul>
+</li>
+<li>있는 그대로를 담담하게 풀어쓰는 글이다.</li>
+<li>독자의 수준 폭도 넓어서 모두를 만족시키는 글을 쓰기란 불가능하다.</li>
+<li>소재 우선 글쓰기
+<ul>
+<li>그저 일어난 일을 적는다.</li>
+<li>일상을 다룬 수필이나 에피소드에 가깝다.</li>
+</ul>
+</li>
+<li>자기 수준 글쓰기
+<ul>
+<li>쉽게 설명하기 위해서 비유법을 쓰는데, 비유법은 개념을 이해하는 데 한계가 있다.</li>
+<li>전문 용어를 굳이 설명하려 하지 않아도 된다. 필요하다면 설명된 페이지를 링크 걸어놓자.</li>
+<li>개발자 자신이 쓰려는 글의 본질에 집중해야 한다.</li>
+</ul>
+</li>
+<li>재미있는 글쓰기
+<ul>
+<li>위키피디아보다 나무위키가 읽는 재미가 있다.</li>
+<li>좋은 기술 블로그는 개발자의 경험에서 우러나오는 내용을 적절한 글쓰기 기교로 녹여낸 것이다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="기술-블로그의-4종류">기술 블로그의 4종류</h3>
+<ul>
+<li>저: 직접 경험하고 실험한 과정이나 결과</li>
+<li>술: 어떤 것을 분석하여 의미를 풀이하고 해석한 것</li>
+<li>편: 산만하고 복잡한 자료를 풀이하고 해석한 것</li>
+<li>집: 여러 사람의 견해나 흩어진 자료를 한데 모아 정리한 것</li>
+</ul>
+<h4 id="개발기는-목차를-잘-잡고-본문부터-쓰기">개발기는 목차를 잘 잡고 본문부터 쓰기</h4>
+<ul>
+<li>목차는 1차원 단방향이지만 개발자의 개발 경험은 2차원이라 풀어쓰기 쉽지 않다.</li>
+<li>성공한 방법을 우선 쓰고, 필요하다면 실패 경험을 뒤에 서술한다.</li>
+<li>네이버 기술 블로그를 참고하면 좋다.</li>
+<li>글은 본문부터 쓰는 게 쉽다. 머리말은 다 쓰고 난 뒤, 글을 올릴 때 생각나는 대로 간단히 쓴다.</li>
+</ul>
+<h4 id="원전을-비교하고-실험해-풀이해서-쓰기">원전을 비교하고 실험해 풀이해서 쓰기</h4>
+<ul>
+<li>&lsquo;술&rsquo;에 해당하는 글
+<ul>
+<li>새로운 기술을 자세하게 또는 비유해 설명한 것</li>
+<li>비슷한 용어를 비교해 풀이한 것</li>
+<li>에러 해결 방법 등</li>
+</ul>
+</li>
+<li>원전의 내용을 가지고 비교 분석하는 글이 대표적이다.</li>
+<li>개발자가 경전을 쓰는 게 아니라 자기 방식대로 풀이하는 글이다.</li>
+</ul>
+<h2 id="python-이것저것">[Python] 이것저것</h2>
+<h3 id="파일이나-디렉터리-존재-유무-확인">파일이나 디렉터리 존재 유무 확인</h3>
+<p><code>os</code> 모듈에 포함된 <code>access()</code> 함수를 이용한다.</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="n">os</span><span class="o">.</span><span class="n">access</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">mode</span><span class="p">)</span></span></span></code></pre></div><p>여기서 mode 플래그에는 네 가지 값이 올 수 있다.</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">os</span><span class="o">.</span><span class="n">F_OK</span>		<span class="c1"># path 존재 여부</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">os</span><span class="o">.</span><span class="n">R_OK</span>		<span class="c1"># 읽기 가능 여부</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="n">os</span><span class="o">.</span><span class="n">W_OK</span>		<span class="c1"># 쓰기 가능 여부</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="n">os</span><span class="o">.</span><span class="n">X_OK</span>		<span class="c1"># 실행 가능 여부</span></span></span></code></pre></div><p>파일 존재 유무를 확인 하기위해 <code>os.F_OK</code>를 사용하였다.</p>
+<h3 id="파일-이동">파일 이동</h3>
+<p><code>os</code> 모듈에 포함된 <code>rename()</code> 함수를 이용한다.</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">dst</span><span class="p">)</span></span></span></code></pre></div><p>혹은 <code>shutil</code> 모듈에 포함된 <code>move()</code> 함수를 이용한다. <code>shutil</code> 패키지는 파이썬 기본 모듈이다.</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="kn">import</span> <span class="nn">shutil</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="n">shutil</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">dst</span><span class="p">)</span></span></span></code></pre></div><p><code>shutil</code>이 뭔가 찾아봤더니 파일 복사와 삭제 등을 지원하는 함수가 포함된 &lsquo;고수준 파일 연산&rsquo; 모듈이라고 한다. <a href="https://docs.python.org/ko/3/library/shutil.html#module-shutil">링크</a></p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>[TIL] 201217</title>
+      <link>https://heojaehun.github.com/blog/til_201217/</link>
+      <pubDate>Fri, 18 Dec 2020 00:49:21 +0900</pubDate>
+      
+      <guid>https://heojaehun.github.com/blog/til_201217/</guid>
+      <description>[책] 개발자의 글쓰기 (p.193 ~ p.219) 그림과 함께 설명할 때 그림에 번호를 매기며 번호 하나마다 한줄 씩 설명을 다는 방식은 읽기 불편하다. 글과 그림을 왔다갔다하며 봐야하기 때문이다. 그럴때는 글을 최대한 줄이고 글 속에 번호를 포함시키는 것이 좋다. 예시: 푸시 서비스를 설정하려면 (1)설정 &amp;gt; (2)푸시 화면에서 (3)푸시 사용을 켜고, (4)인증서를 업로드한 뒤 (5)비밀번호를 설정하여 (6)저장합니다. 서사 서사가 너무 자세하거나 너무 없어도 글을 읽고 이해하기 어렵다. 독자 수준에 맞추어 글의 자세한 정도를 결정해야한다.</description>
+      <content:encoded><![CDATA[<h2 id="책-개발자의-글쓰기-p193--p219">[책] 개발자의 글쓰기 (p.193 ~ p.219)</h2>
+<h3 id="그림과-함께-설명할-때">그림과 함께 설명할 때</h3>
+<ul>
+<li>그림에 번호를 매기며 번호 하나마다 한줄 씩 설명을 다는 방식은 읽기 불편하다. 글과 그림을 왔다갔다하며 봐야하기 때문이다.</li>
+<li>그럴때는 글을 최대한 줄이고 글 속에 번호를 포함시키는 것이 좋다.
+<ul>
+<li>예시: 푸시 서비스를 설정하려면 (1)설정 &gt; (2)푸시 화면에서 (3)푸시 사용을 켜고, (4)인증서를 업로드한 뒤 (5)비밀번호를 설정하여 (6)저장합니다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="서사">서사</h3>
+<ul>
+<li>서사가 너무 자세하거나 너무 없어도 글을 읽고 이해하기 어렵다.</li>
+<li>독자 수준에 맞추어 글의 자세한 정도를 결정해야한다. 하지만 쉬운 일이 아니다.</li>
+<li>개발문서를 시작하기 전에 기본적인 수준을 맞춰놓는 것도 방법이다.
+<ul>
+<li>&lsquo;시작하기 전에&rsquo;나 &lsquo;개요&rsquo; 항목에서 기본 개념을 설명한다.</li>
+</ul>
+</li>
+<li>서사가 길 때는 단계를 만들어 나누어야 한다.
+<ul>
+<li>각 단계마다 이뤄야 하는 목표를 글로 분명히 표현해야 한다.</li>
+</ul>
+</li>
+<li>단계는 글의 목차가 된다.</li>
+</ul>
+<h3 id="수주를-돕는-si-제안서-쓰기">수주를 돕는 SI 제안서 쓰기</h3>
+<ul>
+<li>시스템 구성도의 본질은 그림이 아니다.</li>
+<li>제안요청서 분석
+<ul>
+<li>제안요청서에는 시스템이 구성된 이유와 배경, 상황과 답이 담겨있다.</li>
+<li>개발자는 전체적인 그림을 이해하고 기술 부문을 작성해야 한다.</li>
+</ul>
+</li>
+<li>논리적 완결성
+<ul>
+<li>누구나 제안서를 소설 읽듯이 첫 글자부터 순서대로 읽지 않는다.</li>
+<li>심사위원은 자기와 관련이 있거나 관심 항목만 골라 읽는다.</li>
+</ul>
+</li>
+<li>제안서의 시작은 문제가 아니라 고객의 문제 인식이다.
+<ul>
+<li>문제가 있는 것과 문제를 해결하려는 의지가 있는 것은 다르다.</li>
+</ul>
+</li>
+<li>제안사의 문제 해결 능력에 따라서도 제안하는 방식이 달라져야 한다.
+<ul>
+<li>고객사의 문제 인식과 맞물려서 전략을 짜야한다.</li>
+</ul>
+</li>
+</ul>
+<h4 id="문제-인식-상--해결-능력-상---경쟁사와-비교하여-제안하기">문제 인식: 상 / 해결 능력: 상 - 경쟁사와 비교하여 제안하기</h4>
+<ul>
+<li>적극적으로 경쟁사와 비교를 통해 강점을 들어내야 한다.</li>
+</ul>
+<h4 id="문제-인식-상--해결-능력-하---일단-동감하고-다른-방안을-제시하기">문제 인식: 상 / 해결 능력: 하 - 일단 동감하고 다른 방안을 제시하기</h4>
+<ul>
+<li>할 수 없는 일을 할 수 있다고 말해서는 절대로 안된다.</li>
+<li>문제를 해결하는 방법이 한가지만 있을 수는 없다.</li>
+<li>논리적으로 경쟁사의 방법의 허점을 파고들고 제안사의 해결법이 돋보이게 설득해야한다.</li>
+</ul>
+<h4 id="문제-인식-하--해결-능력-상---고객이-문제를-중대하게-인식하게-만들기">문제 인식: 하 / 해결 능력: 상 - 고객이 문제를 중대하게 인식하게 만들기</h4>
+<ul>
+<li>고객이 사소하게 생각하지만 경쟁사에 비해 문제를 탁월하게 잘 할 수 있을 때 사용하는 방법이다.</li>
+</ul>
+<h4 id="문제-인식-하--해결-능력-하">문제 인식: 하 / 해결 능력: 하</h4>
+<ul>
+<li>경쟁사가 해당 문제를 강점으로 들고나왔을 때 대처할 수 있어야 한다.</li>
+<li>사소한 문제에 대해서도 예상 질문과 답을 준비해두는 것이 좋다.</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>[TIL] 201216</title>
+      <link>https://heojaehun.github.com/blog/til_201216/</link>
+      <pubDate>Thu, 17 Dec 2020 00:14:08 +0900</pubDate>
+      
+      <guid>https://heojaehun.github.com/blog/til_201216/</guid>
+      <description>C# 마이크로소프트에서 제공하는 C# 소개 대화형 자습서를 체험해보았다.
+Hello World 문자열 보간: 문자열이 시작되기 전에 $를 쓰고 문자열 속에서 변수를 {} 기호로 감싼다. 파이썬의 format 1string what = &amp;#34;World; 2Console.WriteLine($&amp;#34;Hello {what}&amp;#34;); C#의 숫자 decimal: double 형보다 범위는 좁으나 표현할 수 있는 소수점 아래의 수가 더 많다. 분배 및 루프 C/C&#43;&#43;의 if~else, while과 같았다. 목록 컬렉션 foreach: 파이썬에서 쓰던 for 문법처럼 쓸 수 있다. 편리하다! List 타입 [책] 개발자의 글쓰기 (p.184 ~ p.</description>
+      <content:encoded><![CDATA[<h2 id="c">C#</h2>
+<p>마이크로소프트에서 제공하는 <a href="https://docs.microsoft.com/ko-kr/dotnet/csharp/tutorials/">C# 소개 대화형 자습서</a>를 체험해보았다.</p>
+<ul>
+<li>Hello World
+<ul>
+<li>문자열 보간: 문자열이 시작되기 전에 <code>$</code>를 쓰고 문자열 속에서 변수를 <code>{}</code> 기호로 감싼다. 파이썬의 format</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c#" data-lang="c#"><span class="line"><span class="ln">1</span><span class="cl"><span class="kt">string</span> <span class="n">what</span> <span class="p">=</span> <span class="s">&#34;World;
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="s"></span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;Hello {what}&#34;</span><span class="p">);</span></span></span></code></pre></div><ul>
+<li>C#의 숫자
+<ul>
+<li>decimal: double 형보다 범위는 좁으나 표현할 수 있는 소수점 아래의 수가 더 많다.</li>
+</ul>
+</li>
+<li>분배 및 루프
+<ul>
+<li>C/C++의 if~else, while과 같았다.</li>
+</ul>
+</li>
+<li>목록 컬렉션
+<ul>
+<li>foreach: 파이썬에서 쓰던 for 문법처럼 쓸 수 있다. 편리하다!</li>
+<li>List 타입</li>
+</ul>
+</li>
+</ul>
+<h2 id="책-개발자의-글쓰기-p184--p192">[책] 개발자의 글쓰기 (p.184 ~ p.192)</h2>
+<h3 id="논증으로-유용한-정보를-제공하기">논증으로 유용한 정보를 제공하기</h3>
+<ul>
+<li>설명을 하거나 행동을 유도할 때 근거를 제시하면 더 설득력을 가진다.
+<ul>
+<li>왜 그렇게 해야 하는지, 어떤 일이 일어날 수 있는지 알려주면 좋다.</li>
+</ul>
+</li>
+<li>개발 문서 문체가 너무 공손하면 독자에게 다른 의미로 해석할 수 있는 여지를 주게 된다.
+<ul>
+<li>~해야 합니다만 반드시 해야 하는 것은 아닙니다.</li>
+<li>~하면 좋습니다. 다만 ~한 경우에는 안 해도 무방합니다.</li>
+<li>~하지 말아야 합니다. ~한 경우에는 어쩔 수 없으니 넘어가도 됩니다.</li>
+<li>~하지 마십시오. 물론 큰 문제는 없습니다.</li>
+<li>~할 것을 추천합니다. 혹시 더 좋은 방법이 있을 수도 있습니다.</li>
+</ul>
+</li>
+<li>이런 표현으로 고쳐야 한다.
+<ul>
+<li>~하십시오.</li>
+<li>~하지 마십시오.</li>
+</ul>
+</li>
+<li>주장에 대한 근거는 최대한 가까운 위치에 서술해야 한다.
+<ul>
+<li>근거를 짧게 서술할 수 없는 양이라면 근거가 있는 위치를 알려주어야 한다.</li>
+</ul>
+</li>
+<li>문제에 대한 답 역시 최대한 가까운 위치에 서술해야 한다.
+<ul>
+<li>답을 해결해나가는 과정을 처음부터 순서대로 나열하기보다, 답을 우선 적고 그 답에 접근하는 과정을 설명하는 것이 좋다.</li>
+<li>접근법을 이미 알고 있는 사람은 답만 알면 되는데 불필요하게 과정을 모두 따라가야 한다.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>[TIL] 201215</title>
+      <link>https://heojaehun.github.com/blog/til_201215/</link>
+      <pubDate>Tue, 15 Dec 2020 23:58:16 +0900</pubDate>
+      
+      <guid>https://heojaehun.github.com/blog/til_201215/</guid>
+      <description>[책] 개발자의 글쓰기 (p.164 ~ p.183) 개념을 범주, 용도, 특징으로 설명하기 범주, 용도, 특징 순으로 작성한다.
+범주 사람들에게 무언가를 설명할 때 범주를 먼저 내새우면 이해하기 쉬워진다. 그 사람이 이미 알고있는 것으로부터 이해하기 시작할 수 있다. 용도 용도는 범주의 핵심 기능 독자에게 서비스의 정체성을 명확히 심어줘야 한다. 특징 장점과 강점 장점은 자기 기준, 강점은 경쟁 대상 기준의 비교 결과이다. 그림과 글로 묘사하기 그림을 함께 쓸 때는 글과 그림이 같은 용어를 사용하는지 꼭 확인한다.</description>
+      <content:encoded><![CDATA[<h2 id="책-개발자의-글쓰기-p164--p183">[책] 개발자의 글쓰기 (p.164 ~ p.183)</h2>
+<h3 id="개념을-범주-용도-특징으로-설명하기">개념을 범주, 용도, 특징으로 설명하기</h3>
+<p>범주, 용도, 특징 순으로 작성한다.</p>
+<ul>
+<li>범주
+<ul>
+<li>사람들에게 무언가를 설명할 때 범주를 먼저 내새우면 이해하기 쉬워진다.</li>
+<li>그 사람이 이미 알고있는 것으로부터 이해하기 시작할 수 있다.</li>
+</ul>
+</li>
+<li>용도
+<ul>
+<li>용도는 범주의 핵심 기능</li>
+<li>독자에게 서비스의 정체성을 명확히 심어줘야 한다.</li>
+</ul>
+</li>
+<li>특징
+<ul>
+<li>장점과 강점</li>
+<li>장점은 자기 기준, 강점은 경쟁 대상 기준의 비교 결과이다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="그림과-글로-묘사하기">그림과 글로 묘사하기</h3>
+<ul>
+<li>그림을 함께 쓸 때는 글과 그림이 같은 용어를 사용하는지 꼭 확인한다.</li>
+<li>묘사에는 주관적 묘사와 객관적 묘사가 있다.
+<ul>
+<li>요구사항 정의서는 오직 개관적 묘사만 포함해야 한다.</li>
+<li>개발자가 주관적 묘사와 객관적 묘사 둘 다 잘하면 기획자나 디자이너와 협의할 때 주도권을 가질 수 있다.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>[TIL] 201214</title>
+      <link>https://heojaehun.github.com/blog/til_201214/</link>
+      <pubDate>Tue, 15 Dec 2020 00:26:36 +0900</pubDate>
+      
+      <guid>https://heojaehun.github.com/blog/til_201214/</guid>
+      <description>[책] 개발자의 글쓰기 (p.139 ~ p.162) 릴리스 노트를 쓸 때 문제, 문제점, 해결책, 후속 계획 순으로 쓰는 것이 좋다.
+1~한 문제가 있었습니다. 2우리가 파악한 문제점은 ~입니다. 3~하여 문제를 해결했습니다. 4(후속 계획)법적인 문제를 고려해서 쓰기 보고서의 형식을 갖춰야 한다. 개발자의 면책 조항을 적는 것이 좋다. 고객에게 어떤 행동을 유도하는 경우, 그 행동이 필수인지, 권장인지, 선택인지를 알려주어야 한다. 그리고 이는 서술어로 구분하여 표현할 수 있다. 필수 &amp;ldquo;~해야 한다.&amp;rdquo; &amp;ldquo;~하지 않으면 안 된다.&amp;rdquo; &amp;ldquo;~하면 안 된다.</description>
+      <content:encoded><![CDATA[<h2 id="책-개발자의-글쓰기-p139--p162">[책] 개발자의 글쓰기 (p.139 ~ p.162)</h2>
+<p>릴리스 노트를 쓸 때 문제, 문제점, 해결책, 후속 계획 순으로 쓰는 것이 좋다.</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">~한 문제가 있었습니다.
+</span></span><span class="line"><span class="ln">2</span><span class="cl">우리가 파악한 문제점은 ~입니다.
+</span></span><span class="line"><span class="ln">3</span><span class="cl">~하여 문제를 해결했습니다.
+</span></span><span class="line"><span class="ln">4</span><span class="cl">(후속 계획)</span></span></code></pre></div><h3 id="법적인-문제를-고려해서-쓰기">법적인 문제를 고려해서 쓰기</h3>
+<ul>
+<li>보고서의 형식을 갖춰야 한다.</li>
+<li>개발자의 면책 조항을 적는 것이 좋다.</li>
+<li>고객에게 어떤 행동을 유도하는 경우, 그 행동이 필수인지, 권장인지, 선택인지를 알려주어야 한다. 그리고 이는 서술어로 구분하여 표현할 수 있다.</li>
+</ul>
+<h4 id="필수">필수</h4>
+<p>&ldquo;~해야 한다.&rdquo;
+&ldquo;~하지 않으면 안 된다.&rdquo;
+&ldquo;~하면 안 된다.&rdquo;
+&ldquo;~해서는 안 된다.&rdquo;</p>
+<h4 id="권장">권장</h4>
+<p>&ldquo;~할 것을 권장한다.&rdquo;
+&ldquo;~하는 것이 좋다.&rdquo;
+&ldquo;~하는 것이 이상적이다.&rdquo;</p>
+<h4 id="선택">선택</h4>
+<p>&ldquo;~할 수도 있다.&rdquo;
+&ldquo;~해도 된다.&rdquo;
+&ldquo;~하는 방법이 있다.&rdquo;</p>
+<p>개발자에게 면책은 개발의 한계이자 도전 대상이다. 다음 릴리스 노트에는 해결 대상으로 적을 수 있도록 노력해야 한다.</p>
+<h3 id="장애-보고서-쓰기">장애 보고서 쓰기</h3>
+<h4 id="장애-보고서를-쓸-때-필요한-기술">장애 보고서를 쓸 때 필요한 기술</h4>
+<ul>
+<li>질문에 대답하는 신속한 글쓰기
+<ul>
+<li>대화하듯이 작성하고 내용 줄여나가기</li>
+<li>장애 내용</li>
+<li>장애 영향</li>
+<li>장애 원인</li>
+<li>조치 상황</li>
+<li>조치 결과</li>
+<li>핵심 원인</li>
+<li>향후 대책</li>
+</ul>
+</li>
+<li>원인과 이유를 찾는 분석적 글쓰기
+<ul>
+<li>5Whys 기법 사용하기: 다섯 번 반복해서 &ldquo;왜?&ldquo;라고 질문하기</li>
+<li>문제가 발생한 진짜 이유를 찾아나가는 것이 중요하다.</li>
+<li>이유를 찾을 때는 주어가 항상 사람이 되어야 한다. 대부분 문제는 사람의 실수에 의해서 나타나기 때문이다.</li>
+</ul>
+</li>
+<li>상사를 고려하는 비지니스 관점의 글쓰기
+<ul>
+<li>비지니스 관점으로 쓴다는 것 &ndash;&gt; 매출과 비용 관점으로 설명하는 것</li>
+</ul>
+</li>
+<li>원하는 것을 얻는 정치적 글쓰기
+<ul>
+<li>때로는 어떤 일을 과격하게 표현해야 할 때가 있다.</li>
+<li>같은 말이라도 조금 과장되게 말을 했을 때 신속하게 처리되기도 한다.</li>
+<li>단, 지나치게 과장된 보고는 허위보고이기 때문에 해서는 안된다.</li>
+<li>정치적 글쓰기는 정확한 단어와 문장으로 현상과 사실을 있는 그대로 표현해야 한다.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>[TIL] 201211</title>
+      <link>https://heojaehun.github.com/blog/til_201211/</link>
+      <pubDate>Fri, 11 Dec 2020 14:05:37 +0900</pubDate>
+      
+      <guid>https://heojaehun.github.com/blog/til_201211/</guid>
+      <description>[책] 개발자의 글쓰기 (p.120 ~ p.138) 체인지 로그를 분류, 요약, 종합하기 체인지 로그를 적절한 양으로 쓰려면
+선정하기: 일단은 체인지 로그를 최대한 많이 쓰기 분류하기: 비슷한 것끼리 분류 요약하기: 문장 요약 종합하기: 체인지 로그 선정할 우선 순위
+독자가 관심 있고 개발자가 노력을 많이 들인 것 독자가 관심 있고 개발자가 노력을 덜 들인 것 독자가 관심 없고 개발자가 노력을 많이 들인 것 독자가 관심 없고 개발자도 노력을 덜 들인 것 분류 방법</description>
+      <content:encoded><![CDATA[<h2 id="책-개발자의-글쓰기-p120--p138">[책] 개발자의 글쓰기 (p.120 ~ p.138)</h2>
+<h3 id="체인지-로그를-분류-요약-종합하기">체인지 로그를 분류, 요약, 종합하기</h3>
+<ul>
+<li>
+<p>체인지 로그를 적절한 양으로 쓰려면</p>
+<ol>
+<li>선정하기: 일단은 체인지 로그를 최대한 많이 쓰기</li>
+<li>분류하기: 비슷한 것끼리 분류</li>
+<li>요약하기: 문장 요약</li>
+<li>종합하기:</li>
+</ol>
+</li>
+<li>
+<p>체인지 로그 선정할 우선 순위</p>
+<ul>
+<li>독자가 관심 있고 개발자가 노력을 많이 들인 것</li>
+<li>독자가 관심 있고 개발자가 노력을 덜 들인 것</li>
+<li>독자가 관심 없고 개발자가 노력을 많이 들인 것</li>
+<li>독자가 관심 없고 개발자도 노력을 덜 들인 것</li>
+</ul>
+</li>
+<li>
+<p>분류 방법</p>
+<ul>
+<li>개발자 중심: 새로운 기능, 개선 사항, 오류 수정 사항을 늘어놓는 방법</li>
+<li>독자 중심: 프로그램을 사용하는 과정, 단계별로 변화된 것을 늘어놓는 방법</li>
+<li>나는 개발자 중심으로 작성해왔다.</li>
+<li>앞으로는 독자 중심으로 작성해야 한다.</li>
+</ul>
+</li>
+<li>
+<p>요약하기</p>
+<ul>
+<li>문장에서 필요한 단어만 남기기</li>
+</ul>
+</li>
+<li>
+<p>종합하기</p>
+<ul>
+<li>릴리스 내용 전체를 종합해서 한 문장으로 만들기</li>
+<li>그리고 그 문장을 로그 첫 줄에 적기
+<ul>
+<li>내가 릴리스 노트 작성할 때 쓰는 &lsquo;개요&rsquo;에 해당된다.</li>
+<li>물론, &lsquo;개요&rsquo;임에도 충분히 내용을 종합하지는 못한 것 같다.</li>
+</ul>
+</li>
+<li>특성과 결과를 합쳐서 서술하기</li>
+<li>이 때, 회사나 독자가 가장 원하는 것을 중심으로 종합해야 한다.</li>
+</ul>
+</li>
+</ul>
+<p>무조건 하나의 관점을 고수할 필요는 없다.
+필요하다면 독자, 개발자의 관점을 함께 쓸 수 있다.</p>
+<h3 id="semantic-versioning">Semantic Versioning</h3>
+<p>X.Y.Z
+각 자리별로 숫자가 바뀔 때 아래와 같은 의미를 갖는다.</p>
+<ul>
+<li>X: 대대적인 업데이트, 이전 버전과 호환되지 않는다. 완전히 새로운 프로그램이다.</li>
+<li>Y: 이전 버전과 대부분 호환되지만 일부 호환되지 않는 기능이 추가되었다.</li>
+<li>Z: 이전 버전과 호환되고 일부 사소한 수정이 이루어졌다.</li>
+</ul>
+<p>개발 버전의 시작은 0.1.0부터이다.
+사전 배포버전이 필요하다면 Z 뒤에 &lsquo;-&lsquo;를 쓰고 적절한 식별자를 붙인다. (예: 1.0.0-alpha)</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

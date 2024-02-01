@@ -1,0 +1,51 @@
+baseURL = "https://heojaehun.github.io"
+title = "📔뒤뜰정원사의 작업 노트"
+# themesDir = "../.."
+theme = "m10c"
+paginate = 30 
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+
+[params]
+  author = "Heo, Jaehun"
+  description = "개발합니다. // 모두의 연구소 임베디드랩"
+  menu_item_separator = " | "
+  avatar = "https://s.gravatar.com/avatar/dc6c07a4575bcccbd3cb004bb080f3aa?s=160"
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/heojaehun"
+  [[params.social]]
+    name = "blog"
+    url = "https://jakupsil.tistory.com"
+
+  # Brown theme
+#   [params.style]
+#    darkestColor = "#463625"
+#    darkColor = "#2a3738"
+#    primaryColor = "#eeee6a"
+#    lightColor = "#96a879"
+#    lightestColor = "#ffffff"
+
+  # Green theme
+  #[params.style]
+  #  darkestColor = "#315659"
+  #  darkColor = "#253031"
+  #  primaryColor = "#dad865"
+  #  lightColor = "#96a879"
+  #  lightestColor = "#fff"
+
+  # Red and black theme
+  #[params.style]
+  #  darkestColor = "#d35050"
+  #  darkColor = "#212121"
+  #  primaryColor = "#ffffff"
+  #  lightColor = "#a2a2a2"
+  #  lightestColor = "#d3d3d3"

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Exception on 작업실📦상자</title>
+    <link>https://heojaehun.github.com/tags/exception/</link>
+    <description>Recent content in Exception on 작업실📦상자</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Jaehun Heo (CC BY 4.0)</copyright>
+    <lastBuildDate>Sun, 06 Dec 2020 00:35:50 +0900</lastBuildDate><atom:link href="https://heojaehun.github.com/tags/exception/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TIL] 201204</title>
+      <link>https://heojaehun.github.com/blog/til_201204/</link>
+      <pubDate>Sun, 06 Dec 2020 00:35:50 +0900</pubDate>
+      
+      <guid>https://heojaehun.github.com/blog/til_201204/</guid>
+      <description>ARM 아키텍쳐 기초 익셉션 벡터 테이블 오프셋 이름 0x00 Reset 0x04 Undefined Instruction 0x08 SVC(Supervisor Call) 0x0C Prefetch Abort 0x10 Data Abort 0x14 Not Used 0x18 IRQ interrupt 0x1C FIQ interrupt Reset (offset: 0x00) 칩에 전원이 처음 들어갔을 때 발생하는 익셉션 Undifined Instruction (offset: 0x04) 알 수 없는 명령이 읽혀졌을 때 발생하는 익셉션 SVC, Suvervisor Call (offset: 0x08) 운영체제에서 시스템 콜을 호출했을 때 발생하는 익셉션 Prefetch Abort (offset: 0x0C) 명령을 읽는 과정에서 오류가 생겼을 때 발생하는 익셉션 Data Abort (offset: 0x10) 데이터를 읽는 과정에서 오류가 생겼을 때 발생하는 익셉션 IRQ Interrupt (offset: 0x18) 인터럽트에 의해서 발생하는 익셉션 인터럽트와 익셉션의 동작은 차이나지 않음 통상적으로 인터럽트는 외부 신호에 의해서 발생하고 익셉션은 내부 신호에 의해서 발생하는 것으로 구분한다.</description>
+      <content:encoded><![CDATA[<h2 id="arm-아키텍쳐-기초">ARM 아키텍쳐 기초</h2>
+<h3 id="익셉션-벡터-테이블">익셉션 벡터 테이블</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">오프셋</th>
+<th style="text-align:center">이름</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0x00</td>
+<td style="text-align:center">Reset</td>
+</tr>
+<tr>
+<td style="text-align:center">0x04</td>
+<td style="text-align:center">Undefined Instruction</td>
+</tr>
+<tr>
+<td style="text-align:center">0x08</td>
+<td style="text-align:center">SVC(Supervisor Call)</td>
+</tr>
+<tr>
+<td style="text-align:center">0x0C</td>
+<td style="text-align:center">Prefetch Abort</td>
+</tr>
+<tr>
+<td style="text-align:center">0x10</td>
+<td style="text-align:center">Data Abort</td>
+</tr>
+<tr>
+<td style="text-align:center">0x14</td>
+<td style="text-align:center">Not Used</td>
+</tr>
+<tr>
+<td style="text-align:center">0x18</td>
+<td style="text-align:center">IRQ interrupt</td>
+</tr>
+<tr>
+<td style="text-align:center">0x1C</td>
+<td style="text-align:center">FIQ interrupt</td>
+</tr>
+</tbody>
+</table>
+<h4 id="reset-offset-0x00">Reset (offset: 0x00)</h4>
+<ul>
+<li>칩에 전원이 처음 들어갔을 때 발생하는 익셉션</li>
+</ul>
+<h4 id="undifined-instruction-offset-0x04">Undifined Instruction (offset: 0x04)</h4>
+<ul>
+<li>알 수 없는 명령이 읽혀졌을 때 발생하는 익셉션</li>
+</ul>
+<h4 id="svc-suvervisor-call-offset-0x08">SVC, Suvervisor Call (offset: 0x08)</h4>
+<ul>
+<li>운영체제에서 시스템 콜을 호출했을 때 발생하는 익셉션</li>
+</ul>
+<h4 id="prefetch-abort-offset-0x0c">Prefetch Abort (offset: 0x0C)</h4>
+<ul>
+<li>명령을 읽는 과정에서 오류가 생겼을 때 발생하는 익셉션</li>
+</ul>
+<h4 id="data-abort-offset-0x10">Data Abort (offset: 0x10)</h4>
+<ul>
+<li>데이터를 읽는 과정에서 오류가 생겼을 때 발생하는 익셉션</li>
+</ul>
+<h4 id="irq-interrupt-offset-0x18">IRQ Interrupt (offset: 0x18)</h4>
+<ul>
+<li>인터럽트에 의해서 발생하는 익셉션</li>
+<li>인터럽트와 익셉션의 동작은 차이나지 않음</li>
+<li>통상적으로 인터럽트는 외부 신호에 의해서 발생하고 익셉션은 내부 신호에 의해서 발생하는 것으로 구분한다.</li>
+</ul>
+<h4 id="fiq-interrupt-offset-0x1c">FIQ Interrupt (offset: 0x1C)</h4>
+<ul>
+<li>인터럽트에 의해서 발생하는 익셉션</li>
+<li>IRQ보다 우선순위가 높고 처리도 빠르다.</li>
+<li>처리 속도가 빠른 이유는 FIQ 인터럽트가 발생하면 동작 모드가 FIQ 모드로 변하게 되는데, 이 때 CPU 레지스터 R8~R12가 FIQ 전용으로 사용되기 때문이다.
+<ul>
+<li>조금 더 구체적인 원리를 알 수 있었으면 한다.</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

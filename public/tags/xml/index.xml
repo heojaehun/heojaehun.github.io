@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>XML on 작업실📦상자</title>
+    <link>https://heojaehun.github.com/tags/xml/</link>
+    <description>Recent content in XML on 작업실📦상자</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Jaehun Heo (CC BY 4.0)</copyright>
+    <lastBuildDate>Tue, 22 Dec 2020 00:05:43 +0900</lastBuildDate><atom:link href="https://heojaehun.github.com/tags/xml/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TIL] 201221</title>
+      <link>https://heojaehun.github.com/blog/til_201221/</link>
+      <pubDate>Tue, 22 Dec 2020 00:05:43 +0900</pubDate>
+      
+      <guid>https://heojaehun.github.com/blog/til_201221/</guid>
+      <description>XML, JSON, YAML Hugo를 쓸 때마다 궁금했던 것이 YAML 양식의 데이터 표현법이다. Hugo를 이용해서 새로운 글을 생성하면 자동으로 글 상단에 YAML 형식으로 글의 제목, 생성 시각, draft 여부가 적혀져 있다. 보기에 어려워 보이지 않아 따로 형식에 대해 알아보지 않고 썼었다. 그래도 이해하고 정리하는 게 필요하지 않을까 해서 자료를 찾아보았고 아래와 같이 정리하였다. YAML에 대한 모든 내용을 정리하지는 않았고 흔히 알고 있는 XML, JSON과 비교하여 어떤 차이가 있는지 알아보았다. 참고 페이지 (인프런 질문 게시판)</description>
+      <content:encoded><![CDATA[<h2 id="xml-json-yaml">XML, JSON, YAML</h2>
+<p>Hugo를 쓸 때마다 궁금했던 것이 YAML 양식의 데이터 표현법이다. Hugo를 이용해서 새로운 글을 생성하면 자동으로 글 상단에 YAML 형식으로 글의 제목, 생성 시각, draft 여부가 적혀져 있다. 보기에 어려워 보이지 않아 따로 형식에 대해 알아보지 않고 썼었다. 그래도 이해하고 정리하는 게 필요하지 않을까 해서 자료를 찾아보았고 아래와 같이 정리하였다. YAML에 대한 모든 내용을 정리하지는 않았고 흔히 알고 있는 XML, JSON과 비교하여 어떤 차이가 있는지 알아보았다. <a href="https://www.inflearn.com/questions/16184">참고 페이지 (인프런 질문 게시판)</a></p>
+<h3 id="xml">XML</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nt">&lt;key1&gt;</span>value1<span class="nt">&lt;/key1&gt;</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="nt">&lt;object1&gt;</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">	<span class="nt">&lt;key2&gt;</span>value2<span class="nt">&lt;/key2&gt;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="nt">&lt;/object1&gt;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="nt">&lt;object2&gt;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">	<span class="nt">&lt;array&gt;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">		<span class="nt">&lt;key3&gt;</span>value3<span class="nt">&lt;/key3&gt;</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">		<span class="nt">&lt;key4&gt;</span>value4<span class="nt">&lt;/key4&gt;</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">	<span class="nt">&lt;/array&gt;</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="nt">&lt;/object2&gt;</span></span></span></code></pre></div><h3 id="json">JSON</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">	<span class="nt">&#34;key1&#34;</span><span class="p">:</span> <span class="s2">&#34;value1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">	<span class="nt">&#34;object1&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">		<span class="nt">&#34;key2&#34;</span><span class="p">:</span> <span class="s2">&#34;value2&#34;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">	<span class="p">},</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">	<span class="nt">&#34;object2&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">		<span class="nt">&#34;array&#34;</span><span class="p">:[</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">			<span class="p">{</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">				<span class="nt">&#34;key3&#34;</span><span class="p">:</span> <span class="s2">&#34;value3&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">				<span class="nt">&#34;key4&#34;</span><span class="p">:</span> <span class="s2">&#34;value4&#34;</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">			<span class="p">}</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">		<span class="p">]</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="p">}</span></span></span></code></pre></div><h3 id="yaml">YAML</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln">1</span><span class="cl"><span class="nt">key1</span><span class="p">:</span><span class="w"> </span><span class="l">value1</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="nt">object1</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">  </span><span class="nt">key2</span><span class="p">:</span><span class="w"> </span><span class="l">value2</span><span class="w">
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w"></span><span class="nt">object2</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="w">  </span><span class="nt">array</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="w">  </span>- <span class="nt">key3</span><span class="p">:</span><span class="w"> </span><span class="l">value3</span><span class="w">
+</span></span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="w">    </span><span class="nt">key4</span><span class="p">:</span><span class="w"> </span><span class="l">value4</span></span></span></code></pre></div><p>그런데 여기서 드는 의문! Hugo가 생성하는 파일의 YAML 형식 데이터에는 배열 표현이 위의 것과 다르다. 분명 대괄호 &ldquo;[]&ldquo;를 사용했다. 이와 관련한 답은 위키피디아의 <a href="https://ko.wikipedia.org/wiki/YAML">YAML</a> 페이지에서 찾을 수 있었다. 배열을 한 줄로 쓸 때는 대괄호로 요소를 묶고, 각 요소는 쉼표로 구분하면 된다.</p>
+<p>이 외에도 YAML에는 몇 가지 양식이 있어서 상황에 맞게 쓸 수 있는 듯 하다. 그러나 지금 필요한 것만 배우기로 하고 나머지는 다음 기회에 알아보기로 했다.</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

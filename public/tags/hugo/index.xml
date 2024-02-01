@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hugo on 작업실📦상자</title>
+    <link>https://heojaehun.github.com/tags/hugo/</link>
+    <description>Recent content in Hugo on 작업실📦상자</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Jaehun Heo (CC BY 4.0)</copyright>
+    <lastBuildDate>Fri, 04 Dec 2020 18:06:41 +0900</lastBuildDate><atom:link href="https://heojaehun.github.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[TIL] 201203</title>
+      <link>https://heojaehun.github.com/blog/til_201203/</link>
+      <pubDate>Fri, 04 Dec 2020 18:06:41 +0900</pubDate>
+      
+      <guid>https://heojaehun.github.com/blog/til_201203/</guid>
+      <description>Makefile 참고 링크
+참고 링크
+KLDP make 강좌
+빌드를 자동화해주는 매크로이다. 단순 매크로는 아니고 Incremental build라고 해서 굳이 build 하지 않아도 되는 파일은 건너띄고 작업을 진행할 수 있는 기능이 있다. 이 기능이 일반 쉘스크립트와의 차이점이다.
+makefile의 기본 규칙은 아래와 같다.
+1&amp;lt;Target&amp;gt; : &amp;lt;Dependencies&amp;gt; 2	&amp;lt;Recipe&amp;gt; Target: 빌드 대상 이름, 최종적으로 생산되는 파일 명 Dependencies: 빌드 대상이 의존하는 파일 목록 Recipe: 빌드 명령 가상 보드의 SYS_ID 값 읽기 realview-pb-a8의 레지스터 주소 0x1000000에 있는 값을 읽어 R1 레지스터에 값을 집어넣기를 성공했다.</description>
+      <content:encoded><![CDATA[<h2 id="makefile">Makefile</h2>
+<p><a href="https://bowbowbow.tistory.com/12">참고 링크</a></p>
+<p><a href="https://www.tuwlab.com/ece/27193">참고 링크</a></p>
+<p><a href="http://doc.kldp.org/KoreanDoc/html/gcc_and_make/gcc_and_make-3.html">KLDP make 강좌</a></p>
+<p>빌드를 자동화해주는 매크로이다.
+단순 매크로는 아니고 Incremental build라고 해서 굳이 build 하지 않아도 되는 파일은 건너띄고 작업을 진행할 수 있는 기능이 있다. 이 기능이 일반 쉘스크립트와의 차이점이다.</p>
+<p>makefile의 기본 규칙은 아래와 같다.</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">&lt;Target&gt; : &lt;Dependencies&gt;
+</span></span><span class="line"><span class="ln">2</span><span class="cl">	&lt;Recipe&gt;</span></span></code></pre></div><ul>
+<li>Target: 빌드 대상 이름, 최종적으로 생산되는 파일 명</li>
+<li>Dependencies: 빌드 대상이 의존하는 파일 목록</li>
+<li>Recipe: 빌드 명령</li>
+</ul>
+<h2 id="가상-보드의-sys_id-값-읽기">가상 보드의 SYS_ID 값 읽기</h2>
+<p>realview-pb-a8의 레지스터 주소 0x1000000에 있는 값을 읽어 R1 레지스터에 값을 집어넣기를 성공했다.</p>
+<h2 id="gdb-명령-알게된-것">gdb 명령 알게된 것</h2>
+<h3 id="list">list</h3>
+<p>소스 코드를 출력한다.</p>
+<h3 id="info-register-i-r">info register (i r)</h3>
+<p>현재 가상 보드의 레지스터 값을 확인하기 위한 명령이다.</p>
+<h3 id="step-s">step (s)</h3>
+<p>코드를 한줄씩 실행하는 명령이다.</p>
+<p><a href="https://lacti.github.io/2008/04/01/gdb-simple-help/">읽어보면 좋을 gdb 설명</a></p>
+<h2 id="hugo">Hugo</h2>
+<h3 id="이모지-사용">이모지 사용</h3>
+<p><a href="https://www.webfx.com/tools/emoji-cheat-sheet/">cheat sheet</a></p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
