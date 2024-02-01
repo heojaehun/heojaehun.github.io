@@ -1,5 +1,5 @@
 # Basic config
-baseURL = "https://heojaehun.github.io/"
+baseURL = "https://github.com/heojaehun/heojaehun.github.io/"
 theme = "hugo-bearcub"
 copyright = "Jaehun Heo (CC BY 4.0)"
 defaultContentLanguage = "en"
