@@ -23,8 +23,8 @@ nimf 프로젝트 github에 설명된 방법되로 RPM Package를 직접 빌드�
 
 > 아래 설명은 [Building RPM Package](https://github.com/hamonikr/nimf/blob/master/BUILD.md#rpm-package) 페이지를 참고하며 볼 것
 
-1. 의존선 패키지 설치
-    - dnf를 이용해 빌드할 때 필요한 의존 패키지를 모두 설치한다.
+1. 의존성 패키지 설치
+    - dnf를 이용해 빌드할 때 필요한 패키지를 모두 설치한다.
 
 ```sh
     sudo dnf install anthy-devel gcc-c++ glib2-devel gtk-doc gtk2-devel \ 
