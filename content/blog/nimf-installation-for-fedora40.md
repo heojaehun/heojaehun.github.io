@@ -1,7 +1,7 @@
 ---
 title: "Fedora 40에 nimf 설치 방법"
 date: 2024-09-03T05:59:17+09:00
-draft: true
+draft: false
 ---
 
 리눅스에서 한글을 입력해야 한다면 nimf를 사용하는 것이 가장 좋은 선택일 것입니다.
@@ -14,7 +14,7 @@ draft: true
 - nimf-settings도 문제없이 실행되고 입력기 설정도 nimf로 설정 됐다.
 - 그러나 아무리해도 한글 입력이 안된다.
 - 자세히 살펴보니 nimf-settings의 설정 항목 중에 이상이 있음을 알게됐다.
-- Input method에는 '두벌식'이라는 설정이 보여야하는데 아무것도 없는 상태이다.
+- Input method에는 'Dubeolsik(두벌식)'이라는 설정이 보여야하는데 아무것도 없는 상태이다.
 
 ## nimf 설치 방법
 
@@ -48,9 +48,20 @@ rpm -ivh nimf-1.3.8-1.fc40.src.rpm
 ```
 
 3. RPM 패키지 빌드 스크립트 수정
-    - `rpmbuild/SPECS/nimf.spec` 파일을 열어 한 줄을 지우거나 주석처리 한다.
+    - `rpmbuild/SPECS/nimf.spec` 파일을 열어 `git submodule update...` 라고 적힌 줄을 지우거나 주석처리 한다.
 
-> TODO: 수정해야 할 코드 명시하기
+```sh
+(...)
+
+%prep
+%setup -q -n nimf
+autoreconf -ivf
+# Clone and build libhangul
+# git submodule update --init --recursive   <<< 이 줄을 주석처리
+cd libhangul
+
+(...)
+```
 
 4. RPM 패키지 빌드와 설치
     - 남은 과정을 진행한다.
@@ -69,14 +80,12 @@ sudo rpm -ivh rpmbuild/RPMS/x86_64/nimf-*.rpm
 
 이 설정은 nimf를 설치하기 전에 해도되고 뒤에 해도 상관 없다.
 
-1. Settings > Keyboard > Input method에 Korean만 남긴다.
+1. Settings를 실행하고 Keyboard의 Input Sources에 Korean만 남긴다.
     - Korean(Hangul)은 ibus 입력기이므로 사용하면 안된다.
 
-> TODO: 캡쳐 이미지 넣기
-
-2. nimf-settings를 실행하여 한/영 전환 키를 설정한다.
-
-> TODO: 캡쳐 이미지 넣기
+2. nimf-settings를 실행하여 한/영 전환 키를 설정이나 그 외 필요한 설정을 마무리한다.
+3. 설정 끝
+    - 사용자 계정을 로그아웃한 뒤 다시 로그인하면 한글 입력이 가능하다.
 
 ## 뒷 이야기
 
