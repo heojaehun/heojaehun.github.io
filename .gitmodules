@@ -3,4 +3,5 @@
 	url = https://github.com/clente/hugo-bearcub
 [submodule "themes/hugo-bearblog"]
 	path = themes/hugo-bearblog
-	url = https://github.com/janraasch/hugo-bearblog.git
+	url = https://github.com/heojaehun/hugo-bearblog.git
+  branch = my
