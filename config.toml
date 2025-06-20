@@ -32,8 +32,6 @@ enableRobotsTXT = true
     languageName = "en-US"
     LanguageCode = "en-US"
     contentDir = "content"
-    [languages.en.params]
-      madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
 
 [params]
   # The description of your website
@@ -70,5 +68,5 @@ enableRobotsTXT = true
   # in your website's metadata.
   [social]
     email = "heojaehun@gmail.com" # Added to the footer so readers can reply to posts
-    twitter = "jakupsil" # Twitter handle (without '@')
+    #twitter = "jakupsil" # Twitter handle (without '@')
     #facebook_admin = "0000000000" # Facebook Page Admin ID
