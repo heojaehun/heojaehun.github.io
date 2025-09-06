@@ -1,5 +1,5 @@
 # Basic config
-baseURL = "https://heojaehun.github.io/public/"
+baseURL = "https://heojaehun.github.io/public"
 theme = "hugo-bearblog"
 copyright = "Jaehun Heo (CC BY 4.0)"
 defaultContentLanguage = "en"
@@ -28,7 +28,7 @@ enableRobotsTXT = true
 # see https://gohugo.io/content-management/multilingual/
 [languages]
   [languages.en]
-    title = "작업실📦상자"
+    title = "작업실록"
     languageName = "en-US"
     LanguageCode = "en-US"
     contentDir = "content"
@@ -47,7 +47,7 @@ enableRobotsTXT = true
 
   # This title is used as the site_name on the Hugo's internal opengraph
   # structured data template
-  title = "Jakupsil box"
+  title = "Jakupsillog"
 
   # Dates are displayed following the format below. For more information about
   # formatting, see https://gohugo.io/functions/format/
